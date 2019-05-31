@@ -18,34 +18,9 @@ int feature_extraction_matches(Mat img1, Mat img2);
 
 int main()
 {
-
-	//string pattern = "D:/C++excercise/Feture/Feture/images/*.png";
-	//vector<Mat> images;
-	//vector<String> fn;
-	//glob(pattern, fn, false);
-	//size_t count = fn.size();
-	//cout <<"总共"<< count<<"张图像" <<endl<<endl;
-
-	////-- 读取图像
-	//Mat img_1 = imread("D:/C++excercise/Feture/Feture/121/2.jpg");	//target
-
-	//int k = 0;
-	//for (int i = 0; i < count; i++)
-	//{
-	//	Mat img_2 = imread(fn[i]);
-	//	//Mat img_2 = imread("D:/C++excercise/Feture/Feture/target/x2.jpg");
-	//	if (find_feature_matches(img_1, img_2) == 1)
-	//	{
-	//		k++;
-	//		cout << "第" << i + 1 << "张图像" <<"匹配成功！"<< endl;
-	//	}
-	//}
-	//cout << "总共" << k << "张匹配成功" << endl;
-
 	Mat img1 = imread("D:/c++_exercise/Feture/Feture/121/2.jpg");
 	Mat img2 = imread("D:/c++_exercise/Feture/Feture/target/x6.jpg");
-    
-	//find_feature_matches(img1, img2);
+
 	feature_extraction_matches(img1, img2);
 
 	waitKey(0);
