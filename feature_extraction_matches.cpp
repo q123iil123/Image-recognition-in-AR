@@ -68,7 +68,7 @@ int feature_extraction_matches(Mat img1, Mat img2)
 			good_matches.push_back(matches[i]);
 		}
 	}
-
+	
 	//-- 第五步:绘制匹配结果
 	Mat img_match;
 	Mat img_goodmatch;
